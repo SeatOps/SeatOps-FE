@@ -1,0 +1,30 @@
+name: Restrict PRs to main
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - edited
+      - ready_for_review
+
+jobs:
+  only-develop-can-target-main:
+    name: Only develop can target main
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Block PRs to main unless source branch is develop
+        if: ${{ github.head_ref != 'develop' }}
+        run: |
+          echo "PRs targeting main are only allowed from develop."
+          echo "Current source branch: ${{ github.head_ref }}"
+          exit 1
+
+      - name: Allow develop to main
+        if: ${{ github.head_ref == 'develop' }}
+        run: |
+          echo "Allowed: develop -> main"
