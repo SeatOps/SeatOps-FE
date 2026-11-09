@@ -1,11 +1,11 @@
-interface OneButtonModalProps {
+interface TwoButtonModalProps {
   closeModal: () => void;
   activeModal: () => void;
   noneActiveModal: () => void;
   text: string;
 }
 
-function TwoButtonModal({ closeModal, activeModal, noneActiveModal, text }: OneButtonModalProps) {
+function TwoButtonModal({ closeModal, activeModal, noneActiveModal, text }: TwoButtonModalProps) {
   return (
     <div className="z-999 bg-black/50 fixed top-0 left-0 w-screen h-screen">
       <section
