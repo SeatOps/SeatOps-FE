@@ -1,17 +1,6 @@
 @theme {
   --font-sans: 'Pretendard Variable', sans-serif;
 
-  --text-40: 40px;
-  --text-36: 36px;
-  --text-28: 28px;
-  --text-24: 24px;
-  --text-20: 20px;
-  --text-18: 18px;
-  --text-16: 16px;
-  --text-14: 14px;
-  --text-11: 11px;
-  --text-8: 8px;
-
   /* Gray */
   --color-gray-0: #ffffff;
   --color-gray-10: #ececec;
@@ -19,11 +8,11 @@
   --color-gray-50: #a2a2a2;
   --color-gray-60: #757575;
   --color-gray-70: #4d4d4d;
-  --color-gray-80: #0e0e0e;
+  --color-gray-80: #292929;
   --color-gray-90: #0e0e0e;
 
   /* Green */
-  --color-green-gray: #cae8dd;
+  --color-green-gray: #b0bec5;
   --color-green-10: #cae8dd;
   --color-green-50: #9ed0be;
   --color-green-80: #01aeb0;
@@ -31,4 +20,94 @@
   /* Primary Colors */
   --color-blue: #2c8cff;
   --color-red: #ff0000;
+}
+
+@utility typo-xl-semibold {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+@utility typo-llll-bold {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@utility typo-llll-semibold {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+@utility typo-lll-bold {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@utility typo-lll-semibold {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@utility typo-ll-bold {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@utility typo-ll-semibold {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@utility typo-lg-bold {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@utility typo-lg-semibold {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@utility typo-lg-medium {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@utility typo-mmm-semibold {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@utility typo-mm-semibold {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@utility typo-md-bold {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@utility typo-md-medium {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@utility typo-ss-semibold {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+@utility typo-ss-medium {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+@utility typo-sm-bold {
+  font-size: 8px;
+  font-weight: 700;
+}
+
+@utility typo-sm-medium {
+  font-size: 8px;
+  font-weight: 500;
 }
