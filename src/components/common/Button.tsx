@@ -9,10 +9,10 @@ const buttonColors = {
 } as const;
 
 const buttonSizes = {
-  signUp: 'w-[512px] h-[75px]',
-  reservation: 'w-[591px] h-[73px]',
-  userInfo: 'w-[522px] h-[54px]',
-  adminButton: 'w-[138px] h-[37px]',
+  signUp: 'w-[100%] h-[75px]',
+  reservation: 'w-[100%] h-[73px]',
+  userInfo: 'w-[100%] h-[54px]',
+  adminButton: 'w-[100%] h-[37px]',
   phoneBottom: 'w-[100%] h-[98px]',
   phoneCalendarBottom: 'w-[100%] h-[63px]',
   phoneButton: 'w-[100%] h-[33px]',
