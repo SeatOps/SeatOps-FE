@@ -25,89 +25,107 @@
 @utility typo-xl-semibold {
   font-size: 40px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 @utility typo-llll-bold {
   font-size: 36px;
   font-weight: 700;
+  line-height: 120%;
 }
 
 @utility typo-llll-semibold {
   font-size: 36px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 @utility typo-lll-bold {
   font-size: 28px;
   font-weight: 700;
+  line-height: 120%;
 }
 
 @utility typo-lll-semibold {
   font-size: 28px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 @utility typo-ll-bold {
   font-size: 24px;
   font-weight: 700;
+  line-height: 120%;
 }
 
 @utility typo-ll-semibold {
   font-size: 24px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 @utility typo-lg-bold {
   font-size: 20px;
   font-weight: 700;
+  line-height: 120%;
 }
 
 @utility typo-lg-semibold {
   font-size: 20px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 @utility typo-lg-medium {
   font-size: 20px;
   font-weight: 500;
+  line-height: 120%;
 }
 
 @utility typo-mmm-semibold {
   font-size: 18px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 @utility typo-mm-semibold {
   font-size: 16px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 @utility typo-md-bold {
   font-size: 14px;
   font-weight: 700;
+  line-height: 120%;
 }
 
 @utility typo-md-medium {
   font-size: 14px;
   font-weight: 500;
+  line-height: 120%;
 }
 
 @utility typo-ss-semibold {
   font-size: 11px;
   font-weight: 600;
+  line-height: 120%;
 }
 
 @utility typo-ss-medium {
   font-size: 11px;
   font-weight: 500;
+  line-height: 120%;
 }
 
 @utility typo-sm-bold {
   font-size: 8px;
   font-weight: 700;
+  line-height: 120%;
 }
 
 @utility typo-sm-medium {
   font-size: 8px;
   font-weight: 500;
+  line-height: 120%;
 }
