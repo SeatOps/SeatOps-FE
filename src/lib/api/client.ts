@@ -3,16 +3,16 @@ import { useAuthStore } from "../../stores/useAuthStore";
  
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://dev-api.sidaewon.com';
 
-const SETTING = {
+const setting = {
     baseURL: API_BASE_URL,
     timeout: 15000,
     withCredentials: true
 }
 
 // 토큰 갱신이 필요한 요청에 사용
-export const apiClient = axios.create(SETTING);
+export const apiClient = axios.create(setting);
 // 토큰 갱신을 거치지 않는 요청에 사용
-export const publicClient = axios.create(SETTING);
+export const publicClient = axios.create(setting);
 
 interface Retry extends InternalAxiosRequestConfig {
     hasRetried?: boolean;
