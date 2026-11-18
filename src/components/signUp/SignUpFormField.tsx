@@ -10,7 +10,7 @@ interface SignUpFormFieldProps {
   label: string;
   placeholder: string;
   warning?: string;
-  eye?: boolean;
+  showPasswordToggle?: boolean;
   readOnly?: boolean;
   register: UseFormRegister<SampleFormValues>;
   errors: FieldErrors<SampleFormValues>;
@@ -22,7 +22,7 @@ function SignUpFormField({
   label,
   placeholder,
   warning,
-  eye = false,
+  showPasswordToggle = false,
   readOnly = false,
   register,
   errors,
@@ -32,12 +32,19 @@ function SignUpFormField({
   const isDirty = !!dirtyFields[id];
 
   return (
-    <FormField id={id} label={label} warning={warning} error={error} isDirty={isDirty} varient="signUp">
+    <FormField
+      id={id}
+      label={label}
+      warning={warning}
+      error={error}
+      isDirty={isDirty}
+      varient="signUp"
+    >
       <Input
         id={id}
         placeholder={placeholder}
         warning={warning}
-        eye={eye}
+        showPasswordToggle={showPasswordToggle}
         readOnly={readOnly}
         registration={register(id)}
         error={error}

@@ -7,7 +7,7 @@ interface InputProps {
   id: string;
   placeholder: string;
   warning?: string;
-  eye?: boolean;
+  showPasswordToggle?: boolean;
   readOnly?: boolean;
   registration: UseFormRegisterReturn;
   error?: string;
@@ -18,7 +18,7 @@ function Input({
   id,
   placeholder,
   warning,
-  eye = false,
+  showPasswordToggle = false,
   readOnly = false,
   registration,
   error,
@@ -34,14 +34,14 @@ function Input({
         {...registration}
         id={id}
         readOnly={readOnly}
-        type={eye && !isVisible ? 'password' : 'text'}
+        type={showPasswordToggle && !isVisible ? 'password' : 'text'}
         placeholder={placeholder}
         aria-invalid={Boolean(error)}
         aria-describedby={message ? `${id}-message` : undefined}
         className="min-w-0 flex-1 bg-transparent typo-md-medium text-gray-80 outline-none placeholder:text-gray-30"
       />
 
-      {eye && (
+      {showPasswordToggle && (
         <button
           type="button"
           onClick={() => setIsVisible((current) => !current)}
@@ -49,7 +49,11 @@ function Input({
           aria-pressed={isVisible}
           className="ml-2 flex h-[15px] w-[22px] shrink-0 items-center justify-center"
         >
-          <img src={isVisible ? eyeOffIcon : eyeIcon} alt="" aria-hidden="true" />
+          <img
+            src={isVisible ? eyeOffIcon : eyeIcon}
+            alt="passwordVisibilityIcon"
+            aria-hidden="true"
+          />
         </button>
       )}
     </div>

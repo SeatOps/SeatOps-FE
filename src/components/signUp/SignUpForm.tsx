@@ -16,7 +16,7 @@ function SignUpForm() {
     mode: 'onChange',
   });
 
-  const onSubmit: SubmitHandler<SampleFormValues> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<SampleFormValues> = () => {};
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -34,7 +34,7 @@ function SignUpForm() {
         label="비밀번호"
         placeholder="비밀번호 입력"
         warning="비밀번호는 10자 이상이어야 합니다."
-        eye
+        showPasswordToggle
         register={register}
         errors={errors}
         dirtyFields={dirtyFields}

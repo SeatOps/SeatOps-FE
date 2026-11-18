@@ -22,7 +22,7 @@ function FormField({
   const message = error ?? warning;
 
   return (
-    <div className={`flex flex-col w-full max-w-full ${varient === 'nomal' ? 'md:flex-row' : ''}`}>
+    <div className={`flex flex-col w-full ${varient === 'nomal' ? 'md:flex-row' : ''}`}>
       <label
         htmlFor={id}
         className={`flex w-full items-center text-gray-70 typo-mm-semibold mb-[10px] ${varient === 'nomal' ? 'md:mb-0 md:w-[178px] md:text-gray-60 md:h-[52px] md:p-[10px]' : 'md:typo-lg-semibold  '}`}

@@ -11,7 +11,7 @@ interface SignUpButtonFormFieldProps {
   label: string;
   placeholder: string;
   warning?: string;
-  eye?: boolean;
+  showPasswordToggle?: boolean;
   readOnly?: boolean;
   register: UseFormRegister<SampleFormValues>;
   errors: FieldErrors<SampleFormValues>;
@@ -23,7 +23,7 @@ function SignUpButtonFormField({
   label,
   placeholder,
   warning,
-  eye = false,
+  showPasswordToggle = false,
   readOnly = false,
   register,
   errors,
@@ -46,7 +46,7 @@ function SignUpButtonFormField({
           id={id}
           placeholder={placeholder}
           warning={warning}
-          eye={eye}
+          showPasswordToggle={showPasswordToggle}
           readOnly={readOnly}
           registration={register(id)}
           error={error}
