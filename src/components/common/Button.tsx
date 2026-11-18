@@ -10,6 +10,7 @@ const buttonColors = {
 
 const buttonSizes = {
   signUp: 'w-[100%] h-[75px]',
+  checkAvailability: 'w-[144px] md:h-[66px] h-[53px] ',
   reservation: 'w-[100%] h-[73px]',
   userInfo: 'w-[100%] h-[54px]',
   adminButton: 'w-[100%] h-[37px]',

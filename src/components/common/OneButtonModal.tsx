@@ -1,10 +1,9 @@
 interface OneButtonModalProps {
-  closeModal: () => void;
   activeModal: () => void;
   text: string;
 }
 
-function OneButtonModal({ closeModal, activeModal, text }: OneButtonModalProps) {
+function OneButtonModal({ activeModal, text }: OneButtonModalProps) {
   return (
     <div className="z-999 bg-black/50 fixed top-0 left-0 w-screen h-screen">
       <section
