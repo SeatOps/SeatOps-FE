@@ -16,3 +16,9 @@ package-lock.json
 # Generated files
 *.min.js
 *.min.css
+
+# GitHub templates and YAML configuration
+.github/ISSUE_TEMPLATE/
+.github/pull_request_template.md
+.github/**/*.yml
+.github/**/*.yaml
