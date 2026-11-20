@@ -2,7 +2,7 @@ import Logo from "../assets/img/logo.svg"
 
 function Header() {
   return (
-    <header className="w-full flex justify-between items-center px-[50px] 2xl:px-[100px] py-[25px] 2xl:py-[50px]">
+    <header className="w-full flex justify-between items-center border-b border-b-1.5 border-b-gray-30 px-[50px] 2xl:px-[100px] py-[25px] 2xl:py-[50px]">
         <img 
             src={Logo} 
             alt="시대원 로고"
