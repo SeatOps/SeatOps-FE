@@ -48,7 +48,6 @@ export function Calendar() {
       }}
       navLayout="around"
       locale={ko}
-      weekStartsOn={1}
       hideWeekdays
       showOutsideDays
       formatters={{ formatCaption: (date) => `${date.getMonth() + 1}월` }}
