@@ -14,6 +14,7 @@ const buttonSizes = {
   reservation: 'w-[100%] h-[73px]',
   userInfo: 'w-[100%] h-[54px]',
   adminButton: 'w-[100%] h-[37px]',
+  adminTitleButton: 'w-[164px] h-[54px]',
   phoneBottom: 'w-[100%] h-[98px]',
   phoneCalendarBottom: 'w-[100%] h-[63px]',
   phoneButton: 'w-[100%] h-[33px]',
